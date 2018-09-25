@@ -1,0 +1,12 @@
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Web.dll.config
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Web.dll
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Web.pdb
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.csprojAssemblyReference.cache
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.csproj.CoreCompileInputs.cache
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.csproj.CopyComplete
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.dll
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.pdb
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Logica.dll
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Logica.pdb

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web;
 
 namespace Proyecto.Web.Views
 {
@@ -6,8 +7,12 @@ namespace Proyecto.Web.Views
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           // if(!IsPostBack)
-           // ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script>swal('Buen Trabajo!', 'Se realizo con exito!', 'success') </script>");
+           if(!IsPostBack)
+            {
+                if (Request.Cookies["cookieEmail"] != null)
+                    txtEmail.Text = Request.Cookies["cookieEmail"].Value.ToString();
+            }
+         
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
@@ -32,7 +37,29 @@ namespace Proyecto.Web.Views
                 bool blBandera = obLoginController.getValidarUsuarioController(obclsUsuarios);
 
                 if (blBandera)
-                    Response.Redirect("../Index/Index.aspx");
+                {
+
+                    Session["SessionEmail"] = txtEmail.Text; 
+
+                    if (chkRecordar.Checked)
+                    {
+                        HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
+                        cookie.Expires = DateTime.Now.AddDays(2);
+                        Response.Cookies.Add(cookie);
+
+                    }
+                    else
+                    {
+                        HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
+                        cookie.Expires = DateTime.Now.AddDays(-1);
+                        Response.Cookies.Add(cookie);
+
+                    }
+
+
+
+                    Response.Redirect("../Index/Index.aspx?stEmail=" + txtEmail.Text);
+                }
 
                 else
                     throw new Exception("Usuario o password incorrecto");

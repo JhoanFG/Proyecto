@@ -8,7 +8,7 @@ namespace Proyecto.Web.Views.PosiblesClientes
     public partial class PosiblesClientes : System.Web.UI.Page
 
     {
-
+     
         void getPosiblesClientes()
         {
             try
@@ -37,8 +37,12 @@ namespace Proyecto.Web.Views.PosiblesClientes
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
+            {
+                if (Session["SessionEmail"] == null)
+                 Response.Redirect("../Views/Login/Login.aspx");
+
                 getPosiblesClientes();
-           
+            }           
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
@@ -48,8 +52,6 @@ namespace Proyecto.Web.Views.PosiblesClientes
                 string stMensaje = string.Empty;
                 if (string.IsNullOrEmpty(txtIdentificacion.Text)) stMensaje += "Ingrese Identificacion,";
               
-
-
                 if (!string.IsNullOrEmpty(stMensaje)) throw new Exception(stMensaje.TrimEnd(','));
 
                 Logica.Models.clsPosiblesClientes obclsPosiblesClientes = new Logica.Models.clsPosiblesClientes

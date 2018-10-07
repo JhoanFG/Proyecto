@@ -39,7 +39,7 @@ namespace Proyecto.Web.Views.PosiblesClientes
             if (!IsPostBack)
             {
                 if (Session["SessionEmail"] == null)
-                 Response.Redirect("../Views/Login/Login.aspx");
+                 Response.Redirect("../Login/Login.aspx");
 
                 getPosiblesClientes();
             }           

@@ -10,3 +10,4 @@ C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.dll
 C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\obj\Debug\Proyecto.Web.pdb
 C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Logica.dll
 C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\Proyecto.Logica.pdb
+C:\Users\amd8.1\source\repos\Proyecto\Proyecto.Web\bin\AjaxControlToolkit.dll

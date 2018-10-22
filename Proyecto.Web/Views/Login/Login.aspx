@@ -50,7 +50,7 @@
                 </form>
                 <div class="text-center">
                     <a class="d-block small mt-3" href="#">Registrar una cuenta</a>
-                    <a class="d-block small" href="#">Olvido la contraseña?</a>
+                    <a class="d-block small" href="../RecuperarPassword/RecuperarPassword.aspx">Olvido la contraseña?</a>
                 </div>
             </div>
         </div>
